@@ -6,7 +6,7 @@ của BR-01 (độ dài 9, 10, 11, 13, 14 ký tự; ký tự X ở cuối và v�
 
 from __future__ import annotations
 
-from app.services.rules import chuan_hoa_isbn, la_isbn_hop_le
+from app.services.isbn import chuan_hoa_isbn, la_isbn_hop_le
 
 
 def test_br01_chuan_hoa_isbn_bo_dau_gach_ngang() -> None:
