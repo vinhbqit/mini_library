@@ -54,6 +54,9 @@ def create_app(config: Mapping[str, Any] | None = None) -> Flask:
     csrf.init_app(app)
 
     from app import models as _models  # noqa: F401
+    from app.routes.sach import sach_bp
+
+    app.register_blueprint(sach_bp)
 
     @app.get("/")
     def trang_chu() -> str:
